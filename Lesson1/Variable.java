@@ -1,6 +1,6 @@
 public class Variable { 
     public static void main(String[] args) {
-        byte ram = 8 ;
+        byte ram = 8;
         short typesys = 64;
         int versionwin = 1909;
         long codeprod = 00100326007;
