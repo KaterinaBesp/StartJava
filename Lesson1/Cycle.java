@@ -6,5 +6,13 @@ public class Cycle {
 			number = number + 1;
 			System.out.println(number);
 		}
+		
+		//TODO: Выведите на консоль с помощью цикла while все числа от [6, -6] (шаг итерации равен 2)
+		int value = -6;
+		int i = 2;
+		while(value <= 6) {
+			System.out.println(value);
+			value = value + i - 1;
+		}
 	}
 }	
