@@ -1,75 +1,36 @@
 public class ConditionalStatement  {	
 	public static void main(String[] args) {
-		//TODO: возраст > 20
-		int age = 25;
-		if (age > 20) {
-			System.out.println(age + "- the age of a person older than 20 years");
-		}
-		else if (age < 20) {
-			System.out.println(age + "- the age of a person under 20 years old"); 
+		//TODO: ЕСЛИ(возраст > 20) {выведите какое-то сообщение}
+		int возраст = 25;
+		if (возраст > 20) {
+			System.out.println(возраст + "- возраст человека старше 20 лет");
 		}
 
-		//TODO:если мужскойПол
-		String sex1 = "male";
-		if (sex1 == "male") {
-			System.out.println(sex1 + "- the man");
-		}
-		else if (sex1 == "Female") {
-			System.out.println(sex1 + "- the women");
-		}
-
-		//TODO:неМужскойПол
-		String sex2 = "female";
-		if (sex2 == "male") {
-			System.out.println(sex2 + "- the man");
-		}
-		else if (sex2 != "male") {
-			System.out.println(sex2 + "- the women");
+		//TODO: ЕСЛИ(мужскойПол) {выведите какое-то сообщение} ЕСЛИ(неМужскойПол) { выведите какое-то сообщение}
+		String пол = "мужскойПол";
+		boolean isAMen = пол == "мужскойПол";
+		if (isAMen == true) {
+			System.out.println(пол + "- выражение истино");
+		} if (isAMen == false) {
+			System.out.println(пол + "- ошибка");
 		}
 
-		//TODO: рост < 1.80
-		float height1 = 1.70f;
-		if (height1 < 1.80f) {
-			System.out.println(height1 + "- the average human height");
-		}
-		else {
-			System.out.println(height1 + "- other");
-		}
-
-		//TODO: перваяБукваИмени == ‘M’
-		String firstLetterName1 = "M";
-		if (firstLetterName1 == "M") {
-			System.out.println(firstLetterName1 + "-the first letter of the name M");
-		}
-		else if (firstLetterName1 == "I") {
-			System.out.println(firstLetterName1 + "-the first letter of the name I");
-		}
-		else {
-			System.out.println(firstLetterName1 + "- other");
+		//TODO: ЕСЛИ(рост < 1.80) {выведите какое-то сообщение} ИНАЧЕ { выведите какое-то сообщение}
+		float рост = 1.70f;
+		if (рост < 1.80f) {
+			System.out.println(рост + "- рост человека ниже 1.80");
+		} else {
+			System.out.println(рост + "- рост человека ниже 1.80");
 		}
 
-		//TODO: перваяБукваИмени == ‘I’
-		String firstLetterName2 = "I";
-		if (firstLetterName2 == "M") {
-			System.out.println(firstLetterName2 + "-the first letter of the name M");
-		}
-		else if (firstLetterName2 == "I") {
-			System.out.println(firstLetterName2 + "-the first letter of the name I");
-		}
-		else {
-			System.out.println(firstLetterName2 + "- other");
-		}
-
-		//TODO: перваяБукваИмени == ‘O’
-		String firstLetterName3 = "O";
-		if (firstLetterName3 == "M") {
-			System.out.println(firstLetterName3 + "-the first letter of the name M");
-		}
-		else if (firstLetterName3 == "I") {
-			System.out.println(firstLetterName3 + "-the first letter of the name I");
-		}
-		else {
-			System.out.println(firstLetterName3 + "- other");
+		//TODO: ЕСЛИ(перваяБукваИмени == ‘M’) { выведите какое-то сообщение} ИНАЧЕ ЕСЛИ(перваяБукваИмени == ‘I’) { выведите какое-то сообщение} ИНАЧЕ {выведите какое-то сообщение}
+		String перваяБукваИмени = "M";
+		if (перваяБукваИмени == "M") {
+			System.out.println(перваяБукваИмени + "-первая буква имени M");
+		} else if (перваяБукваИмени == "I") {
+			System.out.println(перваяБукваИмени + "-первая буква имени I");
+		} else {
+			System.out.println(перваяБукваИмени + "- первая буква имени отличная от M и I");
 		}
 	}
 }	
