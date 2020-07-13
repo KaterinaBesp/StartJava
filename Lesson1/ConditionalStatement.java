@@ -1,6 +1,6 @@
 public class ConditionalStatement  {	
-    public static void main(String[] args) {
-    	//ЕСЛИ(возраст > 20) {выведите какое-то сообщение}
+	public static void main(String[] args) {
+		//ЕСЛИ(возраст > 20) {выведите какое-то сообщение}
 		int age = 25;
 		if (age > 20) {
 		System.out.println(age + "- the age of a person older than 20 years");
@@ -27,9 +27,10 @@ public class ConditionalStatement  {
 		System.out.println(sex2 + "- the women");
 		}
 
-		//ЕСЛИ(рост < 1.80) {выведите какое-то сообщение} ИНАЧЕ {выведите какое-то сообщение}
-        float height1 = 1.70f;
-        if (height1 < 1.80f) {
+		/*ЕСЛИ(рост < 1.80) {выведите какое-то сообщение} 
+		ИНАЧЕ {выведите какое-то сообщение}*/
+		float height1 = 1.70f;
+		if (height1 < 1.80f) {
 		System.out.println(height1 + "- the average human height");
 		}
 		else {
@@ -38,38 +39,39 @@ public class ConditionalStatement  {
 
 		/*ЕСЛИ(перваяБукваИмени == ‘M’) {выведите какое-то сообщение}
 		} ИНАЧЕ ЕСЛИ(перваяБукваИмени == ‘I’) 
-		{выведите какое-то сообщение} ИНАЧЕ {выведите какое-то сообщение}*/
-        String firstLetterName1 = "M";
-        if (firstLetterName1 == "M") {
+		{выведите какое-то сообщение} 
+		ИНАЧЕ {выведите какое-то сообщение}*/
+		String firstLetterName1 = "M";
+		if (firstLetterName1 == "M") {
 		System.out.println(firstLetterName1 + "-the first letter of the name M");
 		}
 		else if (firstLetterName1 == "I") {
 		System.out.println(firstLetterName1 + "-the first letter of the name I");
 		}
-	    else {
+		else {
 		System.out.println(firstLetterName1 + "- other");
 		}
 
-        String firstLetterName2 = "I";
-        if (firstLetterName2 == "M") {
+		String firstLetterName2 = "I";
+		if (firstLetterName2 == "M") {
 		System.out.println(firstLetterName2 + "-the first letter of the name M");
 		}
 		else if (firstLetterName2 == "I") {
 		System.out.println(firstLetterName2 + "-the first letter of the name I");
 		}
-	    else {
+		else {
 		System.out.println(firstLetterName2 + "- other");
 		}
 
 		String firstLetterName3 = "O";
-        if (firstLetterName3 == "M") {
+		if (firstLetterName3 == "M") {
 		System.out.println(firstLetterName3 + "-the first letter of the name M");
 		}
 		else if (firstLetterName3 == "I") {
 		System.out.println(firstLetterName3 + "-the first letter of the name I");
 		}
-	    else {
+		else {
 		System.out.println(firstLetterName3 + "- other");
 		}
 	}
-}       		
+}	
