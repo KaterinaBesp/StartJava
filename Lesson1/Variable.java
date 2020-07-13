@@ -1,13 +1,14 @@
 public class Variable { 
     public static void main(String[] args) {
         byte ram = 8;
-        short typesys = 64;
-        int versionwin = 1909;
-        long codeprod = 00100326007;
-        float cpughz = 2.4f;
-        double osassembly = 18363.900d;
+        short typeSys = 64;
+        int versionWin = 1909;
+        long codeProd = 00100326007;
+        float cpuGhz = 2.4f;
+        double osAssembly = 18363.900d;
         char cpu = 'i';
-        boolean iscorrectparsis = true;
+        boolean isCorrectParSis = true;
+        
         System.out.println("Operative memory" + "-" + ram);
         System.out.println("Type System" + "-" + typesys);
         System.out.println("Version Windows" + "-" + versionwin);
