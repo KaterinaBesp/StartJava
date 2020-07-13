@@ -37,7 +37,8 @@ public class ConditionalStatement  {
 		}
 
 		/*ЕСЛИ(перваяБукваИмени == ‘M’) {выведите какое-то сообщение}
-		} ИНАЧЕ ЕСЛИ(перваяБукваИмени == ‘I’) {выведите какое-то сообщение} ИНАЧЕ {выведите какое-то сообщение}*/
+		} ИНАЧЕ ЕСЛИ(перваяБукваИмени == ‘I’) 
+		{выведите какое-то сообщение} ИНАЧЕ {выведите какое-то сообщение}*/
         String firstLetterName1 = "M";
         if (firstLetterName1 == "M") {
 		System.out.println(firstLetterName1 + "-the first letter of the name M");
