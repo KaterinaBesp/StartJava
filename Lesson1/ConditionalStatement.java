@@ -27,8 +27,7 @@ public class ConditionalStatement  {
 		System.out.println(sex2 + "- the women");
 		}
 
-		//TODO: рост < 1.80 
-		ИНАЧЕ {выведите какое-то сообщение}*/
+		//TODO: рост < 1.80
 		float height1 = 1.70f;
 		if (height1 < 1.80f) {
 		System.out.println(height1 + "- the average human height");
@@ -38,9 +37,6 @@ public class ConditionalStatement  {
 		}
 
 		//TODO: перваяБукваИмени == ‘M’
-		} ИНАЧЕ ЕСЛИ(перваяБукваИмени == ‘I’) 
-		{выведите какое-то сообщение} 
-		ИНАЧЕ {выведите какое-то сообщение}*/
 		String firstLetterName1 = "M";
 		if (firstLetterName1 == "M") {
 		System.out.println(firstLetterName1 + "-the first letter of the name M");
