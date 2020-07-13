@@ -1,6 +1,6 @@
 public class ConditionalStatement  {	
 	public static void main(String[] args) {
-		//ЕСЛИ(возраст > 20) {выведите какое-то сообщение}
+		//TODO: возраст > 20
 		int age = 25;
 		if (age > 20) {
 		System.out.println(age + "- the age of a person older than 20 years");
@@ -9,7 +9,7 @@ public class ConditionalStatement  {
 		System.out.println(age + "- the age of a person under 20 years old"); 
 		}
 
-		//ЕСЛИ(мужскойПол) {выведите какое-то сообщение}
+		//TODO:если мужскойПол
 		String sex1 = "male";
 		if (sex1 == "male") {
 		System.out.println(sex1 + "- the man");
@@ -18,7 +18,7 @@ public class ConditionalStatement  {
 		System.out.println(sex1 + "- the women");
 		}
 
-		//ЕСЛИ(неМужскойПол) {выведите какое-то сообщение}
+		//TODO:неМужскойПол
 		String sex2 = "female";
 		if (sex2 == "male") {
 		System.out.println(sex2 + "- the man");
@@ -27,7 +27,7 @@ public class ConditionalStatement  {
 		System.out.println(sex2 + "- the women");
 		}
 
-		/*ЕСЛИ(рост < 1.80) {выведите какое-то сообщение} 
+		//TODO: рост < 1.80 
 		ИНАЧЕ {выведите какое-то сообщение}*/
 		float height1 = 1.70f;
 		if (height1 < 1.80f) {
@@ -37,7 +37,7 @@ public class ConditionalStatement  {
 		System.out.println(height1 + "- other");
 		}
 
-		/*ЕСЛИ(перваяБукваИмени == ‘M’) {выведите какое-то сообщение}
+		//TODO: перваяБукваИмени == ‘M’
 		} ИНАЧЕ ЕСЛИ(перваяБукваИмени == ‘I’) 
 		{выведите какое-то сообщение} 
 		ИНАЧЕ {выведите какое-то сообщение}*/
@@ -52,6 +52,7 @@ public class ConditionalStatement  {
 		System.out.println(firstLetterName1 + "- other");
 		}
 
+		//TODO: перваяБукваИмени == ‘I’
 		String firstLetterName2 = "I";
 		if (firstLetterName2 == "M") {
 		System.out.println(firstLetterName2 + "-the first letter of the name M");
@@ -63,6 +64,7 @@ public class ConditionalStatement  {
 		System.out.println(firstLetterName2 + "- other");
 		}
 
+		//TODO: перваяБукваИмени == ‘O’
 		String firstLetterName3 = "O";
 		if (firstLetterName3 == "M") {
 		System.out.println(firstLetterName3 + "-the first letter of the name M");
