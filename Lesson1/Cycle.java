@@ -8,19 +8,19 @@ public class Cycle {
 		//TODO: Выведите на консоль с помощью цикла while все числа от [6, -6] (шаг итерации равен 2)
 		int j= 6;
 		while(j >= -6) {
-				System.out.println(j);
+			System.out.println(j);
 			j-= 2;
 		}
 
 		//TODO: Подсчитайте с помощью цикла do-while сумму нечетных чисел от [10, 20], и выведите ее на консоль
-		int num = 20;
 		int k = 10;
 		int sum = 0;
 		do {
-			if(k % 2 != 0)
-			sum += k;
-		    k++;
-		} while (k <= num);
+			if (k % 2 != 0) {
+				sum += k;
+			}
+			k++;
+		} while (k <= 20);
 		System.out.println("Cумма нечетных чисел: " + sum);
 	}	
 }
