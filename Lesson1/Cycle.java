@@ -1,4 +1,4 @@
-public class Cycle {
+public class Cycle {	
 	public static void main(String[] args) {
 		//TODO: Выведите на консоль с помощью цикла for все числа от [0, 20]
 		for (int i = 0; i <= 20; i++) {
@@ -6,12 +6,10 @@ public class Cycle {
 		}
 
 		//TODO: Выведите на консоль с помощью цикла while все числа от [6, -6] (шаг итерации равен 2)
-		int counter = 8;
-		int j = 2;
-		while(counter > -5) {
-			counter = counter - j;
-				System.out.println(counter);
-			counter+= 1;
+		int j= 6;
+		while(j >= -6) {
+				System.out.println(j);
+			j-= 2;
 		}
 
 		//TODO: Подсчитайте с помощью цикла do-while сумму нечетных чисел от [10, 20], и выведите ее на консоль
@@ -23,6 +21,6 @@ public class Cycle {
 			sum += k;
 		    k++;
 		} while (k <= num);
-		System.out.println("Cумма нечетных чисел: "+ sum);
+		System.out.println("Cумма нечетных чисел: " + sum);
 	}	
 }
