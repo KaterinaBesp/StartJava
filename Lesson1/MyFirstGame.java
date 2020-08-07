@@ -10,7 +10,8 @@ public class MyFirstGame {
 				System.out.println ("Введенное вами число-"+ rndNum + "меньше того, что загадал компьютер:");
 				rndNum++; 
 			}
-		} while (rndNum != compNum);
+		} 
+		while (rndNum != compNum);
 		System.out.println ("Вы угадали! " + rndNum);
-	}	
+	}
 }
