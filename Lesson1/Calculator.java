@@ -1,6 +1,6 @@
 public class Calculator {
 	public static void main(String[] args) {
-		int x = 5	;
+		int x = 5;
 		int y = 3;
 		int result;
 		char sign = '^';
@@ -20,7 +20,7 @@ public class Calculator {
 		} else if (sign == '^') {
 			result = x;
 			while (y > 1) { 
-				result *=  x;
+				result *= x;
 				y--;
 			}
 			System.out.println(" x ^ y = " + result);
