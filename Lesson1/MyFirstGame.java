@@ -4,14 +4,13 @@ public class MyFirstGame {
 		int compNum = 74;
 		do {
 			if (compNum < rndNum) {
-				System.out.println ("Введенное вами число-" + rndNum + " больше того, что загадал компьютер:");
+				System.out.println ("Введенное вами число - " + rndNum + " больше того, что загадал компьютер:");
 				rndNum--;
 			} else if (compNum > rndNum) {
-				System.out.println ("Введенное вами число-"+ rndNum + "меньше того, что загадал компьютер:");
+				System.out.println ("Введенное вами число - "+ rndNum + "меньше того, что загадал компьютер:");
 				rndNum++; 
 			}
-		} 
-		while (rndNum != compNum);
-		System.out.println ("Вы угадали! " + rndNum);
+		} while (rndNum != compNum);
+		System.out.println("Вы угадали! " + rndNum);
 	}
 }
