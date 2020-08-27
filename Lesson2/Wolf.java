@@ -1,10 +1,10 @@
 public class Wolf {
 
-	private String name = "Polkan";
-	private String sex = "Male";
-	private String color = "gray";
-	private float weight = 50f;
-	private int age = 7;
+	private String name;
+	private String sex;
+	private String color;
+	private float weight;
+	private int age;
 
 	public String getName() {
 		return name;
@@ -14,7 +14,7 @@ public class Wolf {
 		this.name = name;
 	}
 
-	public public String getSex() {
+	public String getSex() {
 		return sex;
 	}
 
