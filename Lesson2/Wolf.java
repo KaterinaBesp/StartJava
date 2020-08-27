@@ -10,7 +10,7 @@ public class Wolf {
 		return name;
 	}
 
-	public void setNam (String name) {
+	public void setNam(String name) {
 		this.name = name;
 	}
 
@@ -18,7 +18,7 @@ public class Wolf {
 		return sex;
 	}
 
-	public void setSex (String sex) {
+	public void setSex(String sex) {
 		this.sex = sex;
 	}	
 
