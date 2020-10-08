@@ -1,3 +1,4 @@
+package com.startjava.lesson2_3.game;
 import java.util.Scanner; 
 
 public class GuessNumber {
@@ -19,17 +20,17 @@ public class GuessNumber {
 			System.out.print(player1.getName() + ", First player enter number ");
 			player1.setGuessNumber(scan.nextInt());
 			scan.nextLine();
-			compNum(player1);
+			compareNumber(player1);
 			if (isAlive) {
 				System.out.print(player2.getName() + ", Second player enter number ");
 				player2.setGuessNumber(scan.nextInt());
 				scan.nextLine();
-				compNum(player2);
+				compareNumber(player2);
 			}
 		} while (isAlive);
 	}
 
-	private void compNum(Player player) {
+	private void compareNumber(Player player) {
 		if (player.getGuessNumber() > rndNum) {
 			System.out.println("The entered number - is greater than the computer guessed");
 		} else if (player.getGuessNumber() < rndNum) {
