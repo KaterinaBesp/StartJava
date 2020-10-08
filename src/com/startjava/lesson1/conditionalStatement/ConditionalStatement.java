@@ -1,3 +1,5 @@
+package com.startjava.lesson1.conditionalStatement;
+
 public class ConditionalStatement  {	
 	public static void main(String[] args) {
 		//TODO: ЕСЛИ(возраст > 20) {выведите какое-то сообщение}
