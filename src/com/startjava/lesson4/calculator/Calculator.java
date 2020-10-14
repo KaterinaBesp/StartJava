@@ -23,21 +23,21 @@ public class Calculator {
         switch (sign) {
             case '+':
                 System.out.println(Math.addExact(x, y));
-				break;
+                break;
             case '-':
                 System.out.println(Math.subtractExact(x, y));
             case '*':
                 System.out.println(Math.multiplyExact(x, y));
-				break;
+                break;
             case '/':
                 System.out.println(Math.floorDiv(x, y));
-				break;
+                break;
             case '^':
                 System.out.println(Math.pow(x, y));
-				break;
+                break;
             case '%':
                 System.out.println(Math.floorMod(x, y));
-				break;
+                break;
         }
     }
 }
