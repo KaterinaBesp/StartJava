@@ -4,3 +4,4 @@
 *.idea
 *.iml
 .idea/
+.idea/modules.xml
