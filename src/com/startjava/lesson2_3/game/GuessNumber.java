@@ -6,12 +6,45 @@ public class GuessNumber {
 	private int rndNum;
 	private Player player1;
 	private Player player2;
+	private int tryNumber;
 	private boolean isAlive;
+	private static final int MAX_ATTEMPTS_NUMBER = 10;
 	private Scanner scan = new Scanner(System.in);
 
 	public GuessNumber(Player player1, Player player2) {
 		this.player1 = player1;
 		this.player2 = player2;
+	}
+
+	public void start () {
+
+		System.out.println ("You have 10 attempts!");
+
+		do {
+			if (makeMove (player1)) {
+				break;
+			}
+
+			if (makeMove (player2)) {
+				break;;
+			}
+
+			tryNumber ++;
+
+		}  while (tryNumber <MAX_ATTEMPTS_NUMBER);
+
+		if (tryNumber >= MAX_ATTEMPTS_NUMBER) {
+			System.out.println («Простите, ребята! Ваши попытки окончены!»);
+		}
+		displayNumbers ();
+		player1.zeroize (tryNumber);
+		player2.zeroize (tryNumber);
+	}
+
+	private boolean makeMove (Player player) {
+		System.out.println (player.getName () + ", угадайте число, пожалуйста:");
+		player.setNumber (tryNumber, scan.nextInt ());
+		return compareNumbers (игрок);
 	}
 
 	public void play() {
