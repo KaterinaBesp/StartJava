@@ -20,7 +20,7 @@ public class GuessNumber {
         isAlive = true;
         rndNum = (int) (Math.random() * 101);
         System.out.println("You have 10 attempts");
-        System.out.println(rndNum);
+ //       System.out.println(rndNum);
         for (int stepNumber = 1; stepNumber <= 10; stepNumber++) {
             player1.setCountOfAttempts(stepNumber);
             if (!makeMove(player1)) {
