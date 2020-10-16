@@ -1,23 +1,42 @@
 package com.startjava.lesson4.game;
 
-import java.util.Scanner;
+import java.util.Arrays;
 
 public class Player {
-private String name;
-private int guessNumber;
-public Player(String name) {
-    this.name = name;
-}
+    private String name;
+    private int[] guessNumbers = new int[10];
+    private int countOfAttempts;
 
-public String getName() {
-    return name;
-}
+    public Player(String name) {
+        this.name = name;
+    }
 
-public void setGuessNumber(int guessNumber) {
-    this.guessNumber = guessNumber;
-}
+    public String getName() {
+        return name;
+    }
 
-public int getGuessNumber() {
-    return guessNumber;
-}
+    public void setCountOfAttempts(int countOfAttempts) {
+        this.countOfAttempts = countOfAttempts;
+    }
+
+    public int getCountOfAttempts() {
+        return countOfAttempts;
+    }
+
+    public int getGuessNumber() {
+        return guessNumbers[countOfAttempts - 1];
+    }
+
+    public void putGuessNumber(int guessNumber) {
+        guessNumbers[countOfAttempts - 1] = guessNumber;
+    }
+
+    public void clearGuessNumbers() {
+        Arrays.fill(guessNumbers, 0, countOfAttempts, 0);
+        countOfAttempts = 0;
+    }
+
+    public int[] getGuessNumbers() {
+        return Arrays.copyOf(guessNumbers, countOfAttempts);
+    }
 }
