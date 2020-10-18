@@ -5,13 +5,13 @@ import java.util.Scanner;
 
 public class GuessNumber {
     private int rndNum;
-    private com.startjava.lesson4.game.Player player1;
-    private com.startjava.lesson4.game.Player player2;
+    private Player player1;
+    private Player player2;
     private boolean isAlive;
     private Scanner scan = new Scanner(System.in);
 
 
-    public GuessNumber(com.startjava.lesson4.game.Player player1, com.startjava.lesson4.game.Player player2) {
+    public GuessNumber(Player player1, Player player2) {
         this.player1 = player1;
         this.player2 = player2;
     }
@@ -20,7 +20,7 @@ public class GuessNumber {
         isAlive = true;
         rndNum = (int) (Math.random() * 101);
         System.out.println("You have 10 attempts");
- //       System.out.println(rndNum);
+        //       System.out.println(rndNum);
         for (int stepNumber = 1; stepNumber <= 10; stepNumber++) {
             player1.setCountOfAttempts(stepNumber);
             if (!makeMove(player1)) {

@@ -1,6 +1,6 @@
 package com.startjava.lesson2_3.game;
 
-import java.util.Scanner; 
+import java.util.Scanner;
 
 public class GuessNumberTest {
 	public static void main(String[] args) {
@@ -19,4 +19,4 @@ public class GuessNumberTest {
 			} while (!answer.equals("N") && !answer.equals("Y"));
 		} while (!answer.equals("N"));
 	}
-}	
+}
